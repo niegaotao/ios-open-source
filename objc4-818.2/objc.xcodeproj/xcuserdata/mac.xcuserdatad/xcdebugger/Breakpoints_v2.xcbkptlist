@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D0EB9608-1240-4B98-9EC1-6532C431B8E3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B73A3BFC-19EB-4E18-A4EF-6770952EDD0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-internal.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
+            landmarkName = "_objc_encodeTaggedPointer(ptr)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/NSObject.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1930"
+            endingLineNumber = "1930"
+            landmarkName = "callAlloc(cls, checkNil)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0 - 13f458cd61750ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_objc_rootAlloc"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/NSObject.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0 - c23197ad535584e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_alloc"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/NSObject.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0 - 970f5e4dc2cf4a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_allocWithZone"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/NSObject.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0 - baa6a472e19469de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_alloc_init"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/NSObject.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0 - fe4ac2285603acf1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_opt_new"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/NSObject.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "6DF0232F-0EC8-4ACC-87C8-8BDF195801D0 - 3a4eaaf0a3ba19a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[NSObject new]"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/NSObject.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D00644F-75F6-4747-A153-B0FAC4D36924"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7981"
+            endingLineNumber = "7981"
+            landmarkName = "_class_createInstanceFromZone(cls, extraBytes, zone, OBJECT_CONSTRUCT_NONE)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "8D00644F-75F6-4747-A153-B0FAC4D36924 - aa4f9161fa1bef8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "class_createInstance"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7981"
+                  endingLineNumber = "7981"
+                  offsetFromSymbolStart = "255">
+               </Location>
+               <Location
+                  uuid = "8D00644F-75F6-4747-A153-B0FAC4D36924 - d589c49f76d38be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_objc_rootAllocWithZone"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7981"
+                  endingLineNumber = "7981"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  uuid = "8D00644F-75F6-4747-A153-B0FAC4D36924 - 611fc6188132ed56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_object_copyFromZone(objc_object*, unsigned long, void*)"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7981"
+                  endingLineNumber = "7981"
+                  offsetFromSymbolStart = "306">
+               </Location>
+               <Location
+                  uuid = "8D00644F-75F6-4747-A153-B0FAC4D36924 - de69cf9537d62dd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "class_createInstanceFromZone"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/VIP/%E5%A4%A7%E5%B8%88%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%9C%9F/210604-%E5%A4%A7%E5%B8%88%E7%8F%AD-%E7%AC%AC1%E8%8A%82%E8%AF%BE-OC%E5%AF%B9%E8%B1%A1%E4%B8%8A/01--%E8%AF%BE%E5%A0%82%E4%BB%A3%E7%A0%81/002-objc4-818.2/runtime/objc-runtime-new.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7981"
+                  endingLineNumber = "7981"
+                  offsetFromSymbolStart = "259">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "237D5F1D-4639-4F35-A859-771FFAEF12CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KCObjcBuild/main.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
