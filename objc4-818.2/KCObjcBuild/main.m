@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
          
         NSLog(@"%s", __func__);
         NXTeacher *p = [[NXTeacher alloc] init];
-        [p teach];
+        //[p teach];
 
         __weak NSObject *obj = p;
     }
