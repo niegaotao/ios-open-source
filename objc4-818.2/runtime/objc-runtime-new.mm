@@ -3742,7 +3742,7 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
 
          protocol_t * const *protolist = _getObjc2ProtocolList(hi, &count);
         for (i = 0; i < count; i++) {
-            readProtocol(protolist[i], cls, protocol_map, 
+            readProtocol(protolist[i], cls, protocol_map,
                          isPreoptimized, isBundle);
         }
     }
