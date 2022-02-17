@@ -7,127 +7,227 @@
 		<key>all.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>5</integer>
+=======
+			<integer>2</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>chroot_util.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>21</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dsc_extractor.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>10</integer>
+=======
+			<integer>1</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>17</integer>
+=======
+			<integer>11</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_app_cache_util.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>0</integer>
+=======
+			<integer>10</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_closure_util.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>12</integer>
+=======
+			<integer>22</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_executables.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>8</integer>
+=======
+			<integer>6</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_info.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>22</integer>
+=======
+			<integer>14</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_shared_cache_builder.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>13</integer>
+=======
+			<integer>19</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_shared_cache_util.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>11</integer>
+=======
+			<integer>12</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_tests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>15</integer>
+=======
+			<integer>4</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>dyld_usage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>21</integer>
+=======
+			<integer>16</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>libKernelCollectionBuilder.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>4</integer>
+=======
+			<integer>17</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>libdsc.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>7</integer>
+=======
+			<integer>24</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>libdyld.dylib.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>19</integer>
+=======
+			<integer>3</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>libdyld.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>24</integer>
+=======
+			<integer>15</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>libdyld_driverkit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>20</integer>
+=======
+			<integer>9</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>libslc_builder.dylib.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>23</integer>
+=======
+			<integer>8</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>nocr.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>14</integer>
+=======
+			<integer>5</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>run-static.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>6</integer>
+=======
+			<integer>23</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>test_support.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>16</integer>
+=======
+			<integer>13</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>update_dyld_shared_cache.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>18</integer>
+=======
+			<integer>0</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>update_dyld_shared_cache_root_mode_tool.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+			<integer>7</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>update_dyld_shared_cache_tool.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>3</integer>
+=======
+			<integer>18</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 		<key>update_dyld_sim_shared_cache.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>9</integer>
+=======
+			<integer>20</integer>
+>>>>>>> 051ad71ebbfb5b51b61a50026517466cb9195e81
 		</dict>
 	</dict>
 </dict>
