@@ -1828,34 +1828,34 @@ static Boolean __CFRunLoopDoBlocks(CFRunLoopRef rl, CFRunLoopModeRef rlm) { // C
     while (item) {
         struct _block_item *curr = item;
         item = item->_next;
-	Boolean doit = false;
-	if (CFStringGetTypeID() == CFGetTypeID(curr->_mode)) {
-	    doit = CFEqual(curr->_mode, curMode) || (CFEqual(curr->_mode, kCFRunLoopCommonModes) && CFSetContainsValue(commonModes, curMode));
+        Boolean doit = false;
+        if (CFStringGetTypeID() == CFGetTypeID(curr->_mode)) {
+            doit = CFEqual(curr->_mode, curMode) || (CFEqual(curr->_mode, kCFRunLoopCommonModes) && CFSetContainsValue(commonModes, curMode));
         } else {
-	    doit = CFSetContainsValue((CFSetRef)curr->_mode, curMode) || (CFSetContainsValue((CFSetRef)curr->_mode, kCFRunLoopCommonModes) && CFSetContainsValue(commonModes, curMode));
-	}
-	if (!doit) prev = curr;
-	if (doit) {
-	    if (prev) prev->_next = item;
-	    if (curr == head) head = item;
-	    if (curr == tail) tail = prev;
-	    void (^block)(void) = curr->_block;
+            doit = CFSetContainsValue((CFSetRef)curr->_mode, curMode) || (CFSetContainsValue((CFSetRef)curr->_mode, kCFRunLoopCommonModes) && CFSetContainsValue(commonModes, curMode));
+        }
+        if (!doit) prev = curr;
+        if (doit) {
+            if (prev) prev->_next = item;
+            if (curr == head) head = item;
+            if (curr == tail) tail = prev;
+            void (^block)(void) = curr->_block;
             CFRelease(curr->_mode);
             free(curr);
-	    if (doit) {
+            if (doit) {
                 cf_trace(KDEBUG_EVENT_CFRL_IS_CALLING_BLOCK | DBG_FUNC_START, rl, rlm, block, 0);
                 __CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__(block);
                 cf_trace(KDEBUG_EVENT_CFRL_IS_CALLING_BLOCK | DBG_FUNC_END, rl, rlm, block, 0);
-	        did = true;
-	    }
+                did = true;
+            }
             Block_release(block); // do this before relocking to prevent deadlocks where some yahoo wants to run the run loop reentrantly from their dealloc
-	}
+        }
     }
     __CFRunLoopLock(rl);
     __CFRunLoopModeLock(rlm);
     if (head) {
-	tail->_next = rl->_blocks_head;
-	rl->_blocks_head = head;
+        tail->_next = rl->_blocks_head;
+        rl->_blocks_head = head;
         if (!rl->_blocks_tail) rl->_blocks_tail = tail;
     }
     
@@ -2688,10 +2688,11 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
 
     if (__CFRunLoopIsStopped(rl)) {
         __CFRunLoopUnsetStopped(rl);
-	return kCFRunLoopRunStopped;
-    } else if (rlm->_stopped) {
-	rlm->_stopped = false;
-	return kCFRunLoopRunStopped;
+        return kCFRunLoopRunStopped;
+    }
+    else if (rlm->_stopped) {
+        rlm->_stopped = false;
+        return kCFRunLoopRunStopped;
     }
     
 #if __HAS_DISPATCH__
@@ -2717,24 +2718,26 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
     if (seconds <= 0.0) { // instant timeout
         seconds = 0.0;
         timeout_context->termTSR = 0ULL;
-    } else if (seconds <= TIMER_INTERVAL_LIMIT) {
+    }
+    else if (seconds <= TIMER_INTERVAL_LIMIT) {
 #if __HAS_DISPATCH__
-	dispatch_queue_t queue = pthread_main_np() ? __CFDispatchQueueGetGenericMatchingMain() : __CFDispatchQueueGetGenericBackground();
-	timeout_timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+        dispatch_queue_t queue = pthread_main_np() ? __CFDispatchQueueGetGenericMatchingMain() : __CFDispatchQueueGetGenericBackground();
+        timeout_timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
         dispatch_retain(timeout_timer);
-	timeout_context->ds = timeout_timer;
+        timeout_context->ds = timeout_timer;
 #endif
-	timeout_context->rl = (CFRunLoopRef)CFRetain(rl);
-	timeout_context->termTSR = startTSR + __CFTimeIntervalToTSR(seconds);
+        timeout_context->rl = (CFRunLoopRef)CFRetain(rl);
+        timeout_context->termTSR = startTSR + __CFTimeIntervalToTSR(seconds);
 #if __HAS_DISPATCH__
-	dispatch_set_context(timeout_timer, timeout_context); // source gets ownership of context
-	dispatch_source_set_event_handler_f(timeout_timer, __CFRunLoopTimeout);
+        dispatch_set_context(timeout_timer, timeout_context); // source gets ownership of context
+        dispatch_source_set_event_handler_f(timeout_timer, __CFRunLoopTimeout);
         dispatch_source_set_cancel_handler_f(timeout_timer, __CFRunLoopTimeoutCancel);
         uint64_t ns_at = (uint64_t)((__CFTSRToTimeInterval(startTSR) + seconds) * 1000000000ULL);
         dispatch_source_set_timer(timeout_timer, dispatch_time(1, ns_at), DISPATCH_TIME_FOREVER, 1000ULL);
         dispatch_resume(timeout_timer);
 #endif
-    } else { // infinite timeout
+    }
+    else { // infinite timeout
         seconds = 9999999999.0;
         timeout_context->termTSR = UINT64_MAX;
     }
@@ -2756,7 +2759,7 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
 #elif TARGET_OS_LINUX
         int livePort = -1;
 #endif
-	__CFPortSet waitSet = rlm->_portSet;
+        __CFPortSet waitSet = rlm->_portSet;
 
         __CFRunLoopUnsetIgnoreWakeUps(rl);
 
@@ -2768,7 +2771,7 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
             __CFRunLoopDoObservers(rl, rlm, kCFRunLoopBeforeSources);
         }
 
-	__CFRunLoopDoBlocks(rl, rlm);
+        __CFRunLoopDoBlocks(rl, rlm);
 
         Boolean sourceHandledThisLoop = __CFRunLoopDoSources0(rl, rlm, stopAfterHandle);
         if (sourceHandledThisLoop) {
@@ -2795,12 +2798,10 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
 #endif
         }
 #endif
-
         didDispatchPortLastTime = false;
-
-	if (!poll && (rlm->_observerMask & kCFRunLoopBeforeWaiting)) __CFRunLoopDoObservers(rl, rlm, kCFRunLoopBeforeWaiting);
-	__CFRunLoopSetSleeping(rl);
-	// do not do any user callouts after this point (after notifying of sleeping)
+        if (!poll && (rlm->_observerMask & kCFRunLoopBeforeWaiting)) __CFRunLoopDoObservers(rl, rlm, kCFRunLoopBeforeWaiting);
+        __CFRunLoopSetSleeping(rl);
+        // do not do any user callouts after this point (after notifying of sleeping)
 
         // Must push the local-to-this-activation ports in on every loop
         // iteration, as this mode could be run re-entrantly and we don't
@@ -2809,8 +2810,8 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
         __CFPortSetInsert(dispatchPort, waitSet);
 #endif
         
-	__CFRunLoopModeUnlock(rlm);
-	__CFRunLoopUnlock(rl);
+        __CFRunLoopModeUnlock(rlm);
+        __CFRunLoopUnlock(rl);
 
         CFAbsoluteTime sleepStart = poll ? 0.0 : CFAbsoluteTimeGetCurrent();
 
@@ -2875,7 +2876,7 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
         if (windowsMessageReceived) {
             // These Win32 APIs cause a callout, so make sure we're unlocked first and relocked after
             __CFRunLoopModeUnlock(rlm);
-	    __CFRunLoopUnlock(rl);
+            __CFRunLoopUnlock(rl);
 
             if (rlm->_msgPump) {
                 rlm->_msgPump();

@@ -1733,7 +1733,6 @@ struct objc_class : objc_object {
     Class superclass;
     cache_t cache;             // formerly cache pointer and vtable
     class_data_bits_t bits;    // class_rw_t * plus custom rr/alloc flags
-
     Class getSuperclass() const {
 #if __has_feature(ptrauth_calls)
 #   if ISA_SIGNING_AUTH_MODE == ISA_SIGNING_AUTH
